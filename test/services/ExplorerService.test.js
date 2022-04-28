@@ -6,4 +6,12 @@ describe("Test para ExplorerService", () => {
         const explorerInNode = ExplorerService.filterByMission(explorers,"node")
         expect(explorerInNode.length).toBe(1)
     })
+
+    test("Requerimiento 1.2: cantidad de explorer con mission 'node'",() => {
+        const explorers = [{mission: "node"},{mission: "Java"}]
+        const explorerInNode = ExplorerService.getAmountOfExplorersByMission(explorers,"node")
+        expect(explorerInNode).toBe(1)
+    })
+
+    
 })
