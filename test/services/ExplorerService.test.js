@@ -13,5 +13,9 @@ describe("Test para ExplorerService", () => {
         expect(explorerInNode).toBe(1)
     })
 
-    
+    test("Requerimiento 1.3: mostrar Username de  todos los explorer con mission 'node'",() => {
+        const explorers = [{mission: "node", githubUsername: "ajolonauta1",},{mission: "Java", githubUsername: "ajolonauta2",}]
+        const explorerInNode = ExplorerService.getExplorersUsernamesByMission(explorers,"node")
+        expect(explorerInNode.length).toBe(1)
+    })
 })
