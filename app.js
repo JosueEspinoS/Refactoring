@@ -6,3 +6,4 @@ console.log(explorers);
 
 // Part 2: Get the quantity of explorers names in node
 console.log(ExplorerService.filterByMission(explorers,"node"));
+console.log(ExplorerService.getAmountOfExplorersByMission(explorers, "node"));
