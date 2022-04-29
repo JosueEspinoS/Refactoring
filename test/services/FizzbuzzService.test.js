@@ -10,7 +10,7 @@ describe("Test para FizzbuzzService", () => {
     test("Requerimiento trick = FIZZ", () => {
         const explorer1 = {name: "explorer1", score: 3}
         const explorerTrick = FizzbuzzService.applyValidationInExplorer(explorer1)        
-        expect(explorerTrick.trick).toBe("FIZZ2")
+        expect(explorerTrick.trick).toBe("FIZZ")
     })
 
     test("Requerimiento trick = BUZZ", () => {
